@@ -27,7 +27,13 @@ app.get('/tweets/:username', async (req, res)=>{
     const { username } = req.params;
     const tweets = await getTweetsByUsername(username);
     res.json(tweets);
-})
+});
+
+app.post('/tweets/:username')
+
+{
+    text: 'my first tweet'
+}
 
 app.listen(PORT, () => {
   console.log(`twitter API listening to port: ${PORT}`);
