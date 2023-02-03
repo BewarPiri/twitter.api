@@ -6,8 +6,6 @@ const database = new Pool({
   conncectionString: POSTGRES_URL
 });
 
-postgres://twitter_84cu_user:EiM6l1QeAcRjLs9YUssocLSZetRegxNx@dpg-cfedjqmn6mpu0uch58k0-a.frankfurt-postgres.render.com/twitter_84cu
-
 async function getTweets() {
   const result = await database.query(`
     SELECT
