@@ -3,12 +3,7 @@ const { Pool } = require('pg');
 const POSTGRES_URL = process.env.POSTGRES_URL || 'postgresql://postgres:1234@localhost:5432/twitter';
 
 const database = new Pool({
-  conncectionString: 'postgresql://postgres:1234@localhost:5432/twitter',
-  user: 'postgres',
-  host: 'localhost',
-  database: 'twitter',
-  password: '',
-  port: 5432,
+  conncectionString: POSTGRES_URL
 });
 
 postgres://twitter_84cu_user:EiM6l1QeAcRjLs9YUssocLSZetRegxNx@dpg-cfedjqmn6mpu0uch58k0-a.frankfurt-postgres.render.com/twitter_84cu
